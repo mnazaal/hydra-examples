@@ -1,0 +1,10 @@
+defaults:
+  - _self_
+  - environment: main
+  - optimization: main
+
+hydra:
+  sweeper:
+    params:
+      environment.seed: range(5)
+      optimization.utility_function: eig, ucb # When this line is commented, it works
