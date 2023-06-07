@@ -11,6 +11,8 @@ def train_debug(cfg):
     print(
         f"type(call(cfg.optimization.utility))={type(call(cfg.optimization.utility_function))}."
     )
+    x = "hello world"
+    print(f"utility(x) {utility(x)}")
 
 
 @hydra.main(config_path="config", config_name="main", version_base="1.2")
